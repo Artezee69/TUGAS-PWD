@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steam Store</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .container {
+            display: grid;
+            grid-template-areas:
+                "header"
+                "nav"
+                "main"
+                "footer";
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+        }
+
+        header {
+            grid-area: header;
+            background-color: #f0f0f0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            grid-area: nav;
+            background-color: #7d847d;
+            color: #101010;
+            padding: 10px;
+            text-align: center;
+        }
+
+        main {
+            grid-area: main;
+            display: grid;
+            grid-template-areas:
+                "featured-games"
+                "categories"
+                "more-content";
+            grid-template-columns: 1fr;
+            grid-gap: 20px;
+            padding: 20px;
+        }
+
+        .featured-games,
+        .categories,
+        .more-content {
+            background-color: burlywood;
+            padding: 20px;
+            /* Ubah ukuran teks di bawah ini */
+            font-size: 16px;
+        }
+
+        footer {
+            grid-area: footer;
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .footer-links ul {
+            padding: 0;
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        .footer-links ul li {
+            margin: 0 10px;
+        }
+
+        .social-media {
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>Header Content</header>
+        <nav>Navigation Content</nav>
+        <main>
+            <div class="featured-games">Featured Games Content</div>
+            <div class="categories">Categories Content</div>
+            <div class="more-content">More Content</div>
+        </main>
+        <footer>
+            <div class="footer-links">
+                <ul>
+                    <li>Link 1</li>
+                    <li>Link 2</li>
+                    <li>Link 3</li>
+                </ul>
+            </div>
+            <div class="social-media">
+                Social Media Icons
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
